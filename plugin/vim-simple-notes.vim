@@ -10,5 +10,5 @@ func! Notes()
 endfunc
 
 func! NotesOpen()
-    silent vimgrep /\[[^x]\]/j ~/scratch/*
+    silent vimgrep /^\[[^x]\{,1}\]/j ~/scratch/*
 endfunc
